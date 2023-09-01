@@ -11,4 +11,12 @@ func main() {
 	if err != nil {
 		fmt.Println(err)
 	}
+
+	files, err := os.Open("src")
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+
+	fmt.Println(files)
 }
